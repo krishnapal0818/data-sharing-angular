@@ -1,3 +1,23 @@
 <p>s-child works!</p>
 
+
+
+<div class="container">
+    <form>
+      <div class="form-group">
+        <label for="approvalText">approval message for child Component </label> <br /><br />
+        <input
+          type="text"
+          name="approvalText"
+          [(ngModel)]="storeMessage"
+          class="form-control"
+          id="approvalText"
+        /><br /><br />
+      </div>
+      <button (click)="submit()">Approve Advance</button>
+    </form>
+  </div>
+
+
+<h4> this message for service store message</h4>
 {{storeMessage}}
