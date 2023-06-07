@@ -1,0 +1,10 @@
+<h2> This Section is Child Component </h2>
+
+<h3>{{ this.getChildData }} - Right know I'Am child Component</h3>
+<div>
+
+    <input type="text" [(ngModel)]="name"  placeholder="Enter Name" /><br/> 
+    <br />
+
+    <button (click)="onSendDataFormParent()" > Send Data To Parents</button>
+</div>

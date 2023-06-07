@@ -1,0 +1,13 @@
+<p>---------------------------------------------------------------------------------------------------------------------------</p>
+<h2> This section is Parent Componet</h2>
+<div >
+  <ul *ngFor="let el of displayNameForChild">
+    <li>{{ el }}</li>
+  </ul>
+</div>
+
+<p>---------------------------------------------------------------------------------------------------------------------------</p>
+<app-child
+  (theParentData)="getChildData($event)"
+  [getChildData]="theChildData"
+></app-child>
